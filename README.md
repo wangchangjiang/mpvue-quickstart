@@ -22,3 +22,4 @@ $ npm run dev
 
 * [quickstart](http://mpvue.com/mpvue/quickstart)
 * [mpvue-entry](https://github.com/F-loat/mpvue-entry)
+* [mpvue-packager](https://github.com/F-loat/mpvue-packager)
