@@ -27,7 +27,7 @@ module.exports = {
   'settings': {
     'import/resolver': {
       'webpack': {
-        'config': 'build/webpack.base.conf.js'
+        'config': require.resolve('mpvue-packager/build/webpack.base.conf.js')
       }
     }
   },
