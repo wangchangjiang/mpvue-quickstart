@@ -5,10 +5,10 @@ import store from '@/store'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/vuex}}
 
 Vue.config.productionTip = false{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-{{#vuex}}
-App.store = store{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-{{/vuex}}
-App.mpType = 'app'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
-const app = new Vue(App){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+const app = new Vue({
+  mpType: 'app',{{#vuex}}
+  store,{{/vuex}}
+  ...App{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+}){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 app.$mount(){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
